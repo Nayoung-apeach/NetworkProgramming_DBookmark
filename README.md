@@ -10,4 +10,5 @@
 - bookmark/models Bookmark
   - python manage.py makemigrations bookmark
   - python manage.py migrate
+  - \_\_str\_\_()
 - bookmark/admin Bookmark
