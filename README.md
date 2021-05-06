@@ -21,4 +21,6 @@ models -> admin -> views -> templates -> urls
   - bookmark/views BookmarkCreateView
   - bookmark/templates/bookmark bookmark_create.html, bookmark_list.html
   - bookmark/urls bookmark:add
+- Bookmark Detail
+  - bookmark/views BookmarkDetailView
   

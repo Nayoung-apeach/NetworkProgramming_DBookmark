@@ -1,6 +1,6 @@
 from django.shortcuts import render, resolve_url
 from django.urls import reverse_lazy
-from django.views.generic import ListView, CreateView
+from django.views.generic import ListView, CreateView, DetailView
 
 from .models import Bookmark
 
@@ -14,3 +14,8 @@ class BookmarkCreateView(CreateView):
     fields = ['name', 'url']  # '__all__' 로 대체가능
     template_name_suffix = '_create'  # 원래는 '_form' -> bookmark_create.html
     success_url = reverse_lazy('bookmark:list')
+
+
+
+class BookmarkDetailView(DetailView):
+    model = Bookmark
